@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Thania</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #ebeff0;
+            color: #110322;
+        }
+
+        .navbar {
+            background: #f1e499;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #664601;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #110322;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #a05d05;
+        }
+
+        header {
+            background: #f1e499;
+            color: #110322;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            border: none;
+            font-weight: normal;
+            font-size: 22px;
+        }
+
+        section {
+            padding: 35px;
+            max-width: 800px;
+            margin: 25px auto;
+            background: #f7d895;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #a05d05;
+            padding-bottom: 10px;
+            color: #664601;
+        }
+
+        .project {
+            background: #eff2f3;
+            padding: 20px;
+            margin-top: 15px;
+            border-left: 5px solid #664601;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+
+        .about {
+            text-align: center;
+        }
+
+        .about img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 15px;
+            border: 5px solid #fff;
+        }
+
+        .contact p {
+            font-size: 17px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1e499;
+            color: #0e082c;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            section {
+                margin: 15px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Webku</div>
+
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header id="beranda">
+        <h1>Halo, Nama saya Thania</h1>
+        <h2>Web Developer Pemula | Designer</h2>
+        <p>Selamat datang di website portofolio saya!</p>
+    </header>
+
+    <section id="tentang" class="about">
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Saya adalah seorang pemula yang sedang belajar membuat website
+            menggunakan HTML dan CSS. Saya tertarik dengan dunia web
+            development dan desain.
+        </p>
+
+        <img src="Thania.jpg" alt="Foto Thania">
+    </section>
+
+    <section id="proyek">
+        <h2>Proyek</h2>
+
+        <div class="project">
+            <h3>Proyek 1: Website Landing Page</h3>
+            <p>
+                Membuat halaman perkenalan produk sederhana menggunakan
+                struktur HTML dasar dan gaya CSS.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Proyek 2: Biodata Online</h3>
+            <p>
+                Membuat halaman web pribadi yang berisi daftar hobi,
+                riwayat sekolah, dan kontak saya.
+            </p>
+        </div>
+    </section>
+
+    <section id="kontak" class="contact">
+        <h2>Kontak</h2>
+
+        <p>
+            📧 Email: taniavharto@gmail.com
+        </p>
+
+        <p>
+            📷 Instagram: @Nathan777278_
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Thania. Hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>
